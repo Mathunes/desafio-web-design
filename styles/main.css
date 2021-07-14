@@ -49,6 +49,10 @@ main div#top div:last-child {
     justify-content: center;
 }
 
+main div#top div:last-child img {
+    width: 25px;
+}
+
 main div#top div:last-child img:hover {
     cursor: pointer;
 }
@@ -90,10 +94,6 @@ main div#top div:last-child img:hover {
     main div#top .call-to-action {
         font-size: 0.8em;
         margin-bottom: 10px;
-    }
-
-    main div#top div:last-child img {
-        width: 30px;
     }
   
 }

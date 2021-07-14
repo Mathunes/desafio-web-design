@@ -1,23 +1,87 @@
 .services {
   display: flex;
-  flex-direction: row;
-  border: 5px solid #000;
-  background-color: #aaa;
-  height: 250px;
+  flex-direction: column;
+  background-color: #fafafa;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 64px 0;
 }
 
-.services div {
+.services h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+.services .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services .cards div {
+  width: 320px;
+  height: 380px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
   padding: 20px;
+  margin: 16px;
 }
 
-.services svg {
-  font-size: 60px !important;
+.services .cards div:nth-child(1) {
+  background-image: url("../public/images/bg-card-1.png");
 }
-.services img {
-  width: 100px;
-  
+
+.services .cards div:nth-child(2) {
+  background-image: url("../public/images/bg-card-2.png");
+}
+
+.services .cards div:nth-child(3) {
+  background-image: url("../public/images/bg-card-3.png");
+}
+
+.services .cards div img {
+  width: 50px;
+}
+
+.services .cards div p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: .95rem;
+}
+
+.services .arrow-down img {
+  width: 25px;
+}
+
+.services .arrow-down img:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .services h2 {
+    font-size: 1.3rem;
+  }
+
+  .services .cards div {
+    height: 340px;
+  }
+
+  .services .cards div img {
+    width: 40px;
+  }
+
+  .services .cards div p {
+    font-size: .9rem;
+  }
+
+  .services .arrow-down {
+    display: none;
+  }
+
 }
