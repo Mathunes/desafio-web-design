@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @import './header.css';
 @import './modal.css';
@@ -12,6 +13,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Crimson Text', serif;
+}
+
+body {
+  background-image: url("../public/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 
 main {
