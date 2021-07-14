@@ -1,0 +1,41 @@
+main div#top {
+    width: 100%;
+    height: calc(100vh - 182px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 64px 0 64px 64px;
+    color: #fff;
+}
+
+.title {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    letter-spacing: .25rem;
+    margin-bottom: 40px;
+}
+
+main div#top p {
+    width: 60%;
+    font-family: 'Montserrat light', sans-serif;
+    font-size: 1em;
+    line-height: 1.5rem;
+    margin-bottom: 40px;
+}
+
+main div#top .call-to-action {
+    border: 3px solid #fff;
+    background: none;
+    color: #fff;
+    font-family: 'Montserrat light', sans-serif;
+    font-size: 1em;
+    padding: 10px;
+}
+
+main div#top .call-to-action:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    font-weight: 900;
+}
