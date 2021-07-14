@@ -58,6 +58,11 @@ main div#top div:last-child img:hover {
 }
 
 @media (max-width: 750px) {
+
+    main div#top {
+        height: calc(100vh - 145px);
+    }
+    
     main div#top .title {
         font-size: 1.8em;
         margin-bottom: 30px;
@@ -75,9 +80,10 @@ main div#top div:last-child img:hover {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 488px) {
     main div#top {
       padding: 0 32px;
+      height: calc(100vh - 184px);
     }
 
     main div#top .title {
