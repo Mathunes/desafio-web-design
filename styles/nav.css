@@ -3,8 +3,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: #777; */
   padding: 64px;
+  /* position: fixed; */
 }
 
 .nav-logo {
@@ -27,4 +27,25 @@ nav {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
+}
+
+#btn-nav-toggle {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  nav {
+    padding: 32px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .nav-logo {
+    margin-bottom: 20px;
+  }
+
+  .nav-list {
+    margin: 0;
+  }
+
 }
