@@ -3,12 +3,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  background-image: url("../public/images/bg-modal.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(0, 0, 0, .6);
   padding: 48px 32px;
   z-index: 2000;
-
+  border: 3px solid #fff;
   color: #fff;
   transform: translate(-50%, -50%);
   width: 320px;
@@ -38,16 +36,29 @@
   margin-bottom: 20px;
 }
 
+.modal form input:focus {
+  outline: none;
+}
+
+.modal form input::placeholder {
+  color: rgba(255, 255, 255, 0.8)
+}
+
+.modal form input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.3)
+}
+
 .modal form input:last-child {
-  color: #122035;
-  text-transform: uppercase;
+  border: 3px solid #fff;
+  color: #fff;
   font-weight: bolder;
-  letter-spacing: .3rem;
-  background-color: #fff;
+  font-size: 1em;
 }
 
 .modal form input:last-child:hover {
   cursor: pointer;
+  background-color: #fff;
+  color: #000;
 }
 
 .modal.visible {

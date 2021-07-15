@@ -1,4 +1,8 @@
-main div#top {
+h2 {
+    text-transform: uppercase;
+}
+
+main section.presentation {
     width: 100%;
     height: calc(100vh - 182px);
     display: flex;
@@ -9,7 +13,7 @@ main div#top {
     color: #fff;
 }
 
-main div#top .title {
+main section.presentation .title {
     font-size: 2.5em;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
@@ -17,7 +21,7 @@ main div#top .title {
     margin-bottom: 40px;
 }
 
-main div#top p {
+main section.presentation p {
     width: 60%;
     font-family: 'Montserrat light', sans-serif;
     font-size: 1em;
@@ -25,7 +29,7 @@ main div#top p {
     margin-bottom: 40px;
 }
 
-main div#top .call-to-action {
+main section.presentation .call-to-action {
     border: 3px solid #fff;
     background: none;
     color: #fff;
@@ -35,69 +39,69 @@ main div#top .call-to-action {
     margin-bottom: 40px;
 }
 
-main div#top .call-to-action:hover {
+main section.presentation .call-to-action:hover {
     cursor: pointer;
     background: #fff;
     color: #000;
     font-weight: 900;
 }
 
-main div#top div:last-child {
+main section.presentation div:last-child {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-main div#top div:last-child img {
+main section.presentation div:last-child img {
     width: 25px;
 }
 
-main div#top div:last-child img:hover {
+main section.presentation div:last-child img:hover {
     cursor: pointer;
 }
 
 @media (max-width: 750px) {
 
-    main div#top {
+    main section.presentation {
         height: calc(100vh - 145px);
     }
     
-    main div#top .title {
+    main section.presentation .title {
         font-size: 1.8em;
         margin-bottom: 30px;
     }
 
-    main div#top p {
+    main section.presentation p {
         width: 100%;
         font-size: .9em;
         margin-bottom: 30px;
     }
 
-    main div#top .call-to-action {
+    main section.presentation .call-to-action {
         font-size: .9em;
         margin-bottom: 30px;
     }
 }
 
 @media (max-width: 488px) {
-    main div#top {
+    main section.presentation {
       padding: 0 32px;
       height: calc(100vh - 184px);
     }
 
-    main div#top .title {
+    main section.presentation .title {
         font-size: 1.5em;
         margin-bottom: 10px;
     }
 
-    main div#top p {
+    main section.presentation p {
         width: 100%;
         font-size: 0.8em;
         margin-bottom: 10px;
     }
 
-    main div#top .call-to-action {
+    main section.presentation .call-to-action {
         font-size: 0.8em;
         margin-bottom: 10px;
     }
