@@ -29,6 +29,18 @@ nav {
   text-decoration: none;
 }
 
+.nav-link:after {
+  display:block;
+  content: '';
+  border-bottom: 3px solid #fff;  
+  transform: scaleX(0);  
+  transition: transform .3s ease-in-out;
+}
+
+.nav-link:hover:after { transform: scaleX(1); }
+.nav-link.fromRight:after{ transform-origin:100% 50%; }
+.nav-link.fromLeft:after{  transform-origin:  0% 50%; }
+
 #btn-nav-toggle {
   display: none;
 }

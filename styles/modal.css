@@ -12,6 +12,10 @@
   width: 320px;
 }
 
+.modal.visible {
+  display: block;
+}
+
 .modal h2 {
   font-size: 1rem;
   text-align: center;
@@ -41,7 +45,8 @@
 }
 
 .modal form input::placeholder {
-  color: rgba(255, 255, 255, 0.8)
+  color: rgba(255, 255, 255, 0.8);
+  transition: color .3s;
 }
 
 .modal form input:focus::placeholder {
@@ -53,16 +58,13 @@
   color: #fff;
   font-weight: bolder;
   font-size: 1em;
+  transition: background .3s, color .3s;
 }
 
 .modal form input:last-child:hover {
   cursor: pointer;
   background-color: #fff;
   color: #000;
-}
-
-.modal.visible {
-  display: block;
 }
 
 .body-blackout {
