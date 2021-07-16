@@ -36,9 +36,17 @@ nav {
   transition: transform .3s ease-in-out;
 }
 
-.nav-link:hover:after { transform: scaleX(1); }
-.nav-link.fromRight:after{ transform-origin:100% 50%; }
-.nav-link.fromLeft:after{  transform-origin:  0% 50%; }
+.nav-link:hover:after { 
+  transform: scaleX(1); 
+}
+
+.nav-link.fromRight:after{ 
+  transform-origin: 100% 50%; 
+}
+
+.nav-link.fromLeft:after{  
+  transform-origin: 0% 50%;
+}
 
 #btn-nav-toggle {
   display: none;
@@ -75,7 +83,7 @@ nav {
     width: 40%;
     padding-top: 32px;
     right: -40%;
-    transition: right .3s;
+    transition: right .4s;
     z-index: 1500;
   }
 
