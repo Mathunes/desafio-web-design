@@ -5,16 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="images/favicon.png" />
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+  <!-- Importing CSS on startup preventing unstyled initial display -->
+  <link rel="stylesheet" href="assets/styles/index.css">
   <title>My Company</title>
 </head>
 
 <body>
+
   <header>
     <nav>
-      <img src="images/logo.svg" class="nav-logo" alt="Logo My Company"/>
-      <img src="images/btn-navbar.svg" id="btn-nav" alt="Navegation bar button" />
+      <img src="assets/images/logo.svg" class="nav-logo" alt="Logo My Company"/>
+      <img src="assets/images/btn-navbar.svg" id="btn-nav" alt="Toggle navbar" />
+      
       <ul class="nav-list">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
@@ -34,7 +37,9 @@
 
   <main>
     <section class="presentation">
+
       <h1 class="title">The road less traveled</h1>
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Curabitur fringilla turpis est, eget posuere libero pharetra a.
@@ -42,17 +47,22 @@
         Nunc sit amet eros vitae ex mattis dignissim a nec libero.
         Nam congue luctus nisl, id finibus nisi cursus vitae
       </p>
+
       <button type="button" class="call-to-action">Start my journey</button>
+
       <div>
-        <img src="./images/arrow-down-white.svg" alt="Next services section button" id="btn-next-to-services">
+        <img src="assets/images/arrow-down-white.svg" alt="Next section button" id="btn-next-to-services">
       </div>
+
     </section>
 
     <section class="services">
+
       <h2>Services</h2>
+
       <div class="cards">
         <div>
-          <img src="images/calendar.svg" alt="calendar" />
+          <img src="assets/images/calendar.svg" alt="Calendar icon" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Curabitur fringilla turpis est, eget posuere libero pharetra a.
@@ -62,7 +72,7 @@
           </p>
         </div>
         <div>
-          <img src="images/lock.svg" alt="lock" />
+          <img src="assets/images/lock.svg" alt="Lock icon" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Curabitur fringilla turpis est, eget posuere libero pharetra a.
@@ -72,7 +82,7 @@
           </p>
         </div>
         <div>
-          <img src="images/like.svg" alt="heart" />
+          <img src="assets/images/like.svg" alt="Heart icon" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Curabitur fringilla turpis est, eget posuere libero pharetra a.
@@ -82,16 +92,20 @@
           </p>
         </div>
       </div>
+
       <div class="arrow-down">
-        <img src="./images/arrow-down-black.svg" alt="Next services section button" id="btn-next-to-testimonials">
+        <img src="assets/images/arrow-down-black.svg" alt="Next section button" id="btn-next-to-testimonials">
       </div>
+
     </section>
 
     <section class="testimonials">
+
       <h2>Testimonials</h2>
+
       <div>
         <article>
-          <img src="images/guy1.png" alt="guy" />
+          <img src="assets/images/guy1.png" alt="Guy" />
           <div>
             <blockquote>
               ...I was struggling to find the right solution, and once MyCompany came along,
@@ -99,8 +113,9 @@
             </blockquote>
           </div>
         </article>
+
         <article>
-          <img src="images/girl.png" alt="girl" />
+          <img src="assets/images/girl.png" alt="Girl" />
           <div>
             <blockquote>
               ...I was struggling to find the right solution, and once MyCompany came along,
@@ -108,8 +123,9 @@
             </blockquote>
           </div>
         </article>
+        
         <article>
-          <img src="images/guy2.png" alt="guy" />
+          <img src="assets/images/guy2.png" alt="Guy" />
           <div>
             <blockquote>
               ...I was struggling to find the right solution, and once MyCompany came along,
@@ -119,14 +135,17 @@
         </article>
       </div>
     </section>
+
   </main>
 
   <footer>
+
     <div>
-      <img src="./images/logo.svg" alt="Logo My Company">
+      <img src="assets/images/logo.svg" alt="Logo My Company">
       <a href="https://processo-seletivo-sti-uff.web.app/" target="_blank">Previous version</a>
     </div>
     <p>© 2021 My Company. Developed by <a href="http://mathunes.herokuapp.com/" target="_blank">Matheus Vieira</a>.</p>
+
   </footer>
 
   <div class="modal">
@@ -138,10 +157,12 @@
       <input type="submit" value="Submit" />
     </form>
   </div>
+
   <div class="body-blackout"></div>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="/packs/bundle.js"></script>
-  <script src="./scripts/index.js"></script>
+  <script src="assets/scripts/index.js"></script>
 </body>
 
 </html>
