@@ -27,12 +27,6 @@ body {
   background-attachment: fixed;
 }
 
-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .body-blackout {
   position: fixed;
   z-index: -10000;

@@ -29,11 +29,12 @@ nav {
 }
 
 .nav-link:after {
-  display:block;
+  display: block;
   content: '';
   border-bottom: 3px solid #fff;  
   transform: scaleX(0);  
   transition: transform .3s ease-in-out;
+  margin-top: 8px;
 }
 
 .nav-link:hover:after { 
