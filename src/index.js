@@ -24,18 +24,34 @@ function closeModal(modal, blackout) {
   }
 }
 
-$(document).ready(function(){
+$(document).ready(function() {
 
-  $('#btn-next-to-services').on('click', ()=>{
+  $('#btn-next-to-services').on('click', () => {
     $('html, body').animate({
       scrollTop: $(".services").offset().top
     });
-  })
+  });
 
-  $('#btn-next-to-testimonials').on('click', ()=>{
+  $('#btn-next-to-testimonials').on('click', () => {
     $('html, body').animate({
       scrollTop: $(".testimonials").offset().top
     });
   })
+
+  $('#btn-nav').on('click', () => {
+    $('.nav-list').css(
+      "right", "0"
+    );
+
+    $('.body-blackout').addClass('visible');
+  });
+
+  $('.body-blackout').on('click', () => {
+    $('.body-blackout').removeClass('visible');
+
+    $('.nav-list').css(
+      "right", "-40%"
+    );
+  });
 
 });
