@@ -24,7 +24,7 @@
   justify-content: center;
 }
 
-.services .cards div {
+.services .cards .card {
   width: 320px;
   height: 340px;
   display: flex;
@@ -36,28 +36,28 @@
   transition: all .3s;
 }
 
-.services .cards div:hover {
+.services .cards .card:hover {
   -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.7);
   box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.7);
 }
 
-.services .cards div:nth-child(1) {
+.services .cards .card:nth-child(1) {
   background-image: url("../images/bg-card-1.png");
 }
 
-.services .cards div:nth-child(2) {
+.services .cards .card:nth-child(2) {
   background-image: url("../images/bg-card-2.png");
 }
 
-.services .cards div:nth-child(3) {
+.services .cards .card:nth-child(3) {
   background-image: url("../images/bg-card-3.png");
 }
 
-.services .cards div img {
+.services .cards .card img {
   width: 45px;
 }
 
-.services .cards div p {
+.services .cards .card p {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -80,16 +80,16 @@
     font-size: 1.3rem;
   }
 
-  .services .cards div {
-    height: 340px;
+  .services .cards .card {
+    height: 320px;
   }
 
-  .services .cards div img {
-    width: 40px;
+  .services .cards .card img {
+    width: 35px;
   }
 
-  .services .cards div p {
-    font-size: .9rem;
+  .services .cards .card p {
+    font-size: .85rem;
   }
 
   .services .arrow-down {
